@@ -1,7 +1,7 @@
 # Changelog
 
 Dated log of what changed and why. Newest entries at the top. This file is
-the fastest way for anyone to see the project's
+the fastest way for anyone (including future-you) to see the project's
 real arc without re-reading every commit.
 
 Format for each entry:
@@ -45,6 +45,20 @@ Format for each entry:
   files for different works (e.g. Haydn single movements vs. Brahms
   full 4-movement file, 66 vs. 882 measures) -- this is a real
   confound, not just a data-hygiene issue; documented and corrected.
+
+## 2026-09-04 (approx.)
+- Methodological case study: tested what "Harmonic Complexity" (mean
+  distinct pitch classes per vertical slice) actually measures, using an
+  unbiased 28-chorale sample from Bach's ~413 four-part chorales (every
+  15th file, not cherry-picked). Found Bach chorales score consistently
+  *higher* on this metric (mean 3.267) than nearly every string quartet
+  movement in the corpus, including Debussy/Bartók/Ravel -- the most
+  harmonically adventurous works in the dataset by any conventional
+  account. Confirms the metric measures vertical pitch-class density
+  (homophonic 4-voice chorales pack more simultaneous distinct pitches
+  than quartet textures with solo lines, unisons, and rests), not
+  harmonic sophistication in the colloquial/music-theoretic sense. Full
+  write-up: `docs/methodology_notes/bach_chorale_methodological_note.md`.
 
 ## 2026-08-27 (approx.)
 - Pseudoreplication check: naive Kruskal-Wallis found 3/4 features

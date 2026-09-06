@@ -5,6 +5,28 @@ features of classical music (pitch range, harmonic complexity, rhythmic
 variability, note density) show cyclical or monotonic trends across style
 periods, using symbolic score data.
 
+## Key methodological findings (self-correction arc)
+
+Three independent findings, each caught and corrected during the project
+itself rather than assumed correct from the start. Full details and
+exact dates/numbers are in `CHANGELOG.md`; this is the one-line version:
+
+1. **Pseudoreplication.** A naive test found 3 of 4 features significant
+   across style periods -- but two of the four groups were dominated by
+   a single composer (Bach, Beethoven), so the "era effect" could really
+   have been a "this one composer's style" effect. Re-tested with one
+   work per composer; only pitch range survived.
+2. **Analysis-unit inconsistency.** Some works in the corpus were single
+   movements, others were complete multi-movement files (66 vs. 882
+   measures for two pieces) -- discovered this was silently inflating
+   later-period feature values. Standardized on averaging across all
+   movements per work, and re-ran everything.
+3. **Metric validity check.** Used an unbiased 28-chorale sample to test
+   whether "Harmonic Complexity" measures what its name suggests. It
+   doesn't -- it measures vertical pitch-class density, which is why
+   homophonic Bach chorales score *higher* than harmonically adventurous
+   20th-century quartets. See `docs/methodology_notes/`.
+
 ## Repository structure
 
 ```
