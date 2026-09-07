@@ -1,8 +1,6 @@
 # Changelog
 
-Dated log of what changed and why. Newest entries at the top. This file is
-the fastest way for anyone (including future-you) to see the project's
-real arc without re-reading every commit.
+Dated log of what changed and why. Newest entries at the top. 
 
 Format for each entry:
 ```
